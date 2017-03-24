@@ -1,0 +1,15 @@
+{
+    "name": "atef/php_mvc_angular_chat",
+    "type": "project",
+    "description": "simple PHP angularjs chat application",
+    "keywords": ["PHP", "mvc", "angularjs", "chat", "application"],
+    "authors": [
+        {
+            "name": "Atef",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    }
+}

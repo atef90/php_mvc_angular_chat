@@ -1,0 +1,30 @@
+
+<div class="container">
+    <div class="card card-container">
+        <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+        <p id="profile-name" class="profile-name-card"></p>
+
+
+        <form class="form-signin"  ng-submit="login()">
+
+            <div role="alert" class="alert alert-danger alert-dismissible text-center" ng-if="loginError">
+                <strong>{{loginErrorText}}.</strong>
+            </div>
+
+            <span id="reauth-email" class="reauth-email"></span>
+            <input type="text" id="inputEmail" class="form-control" placeholder="Email address" required   ng-model="credentials.email">
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required  ng-model="credentials.password">
+            <div id="remember" class="checkbox">
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" ng-disabled="disableSubmitBtn">Sign in</button>
+        </form><!-- /form -->
+
+
+        <a ui-sref="register" class="forgot-password">
+            signup
+        </a>
+    </div><!-- /card-container -->
+</div><!-- /container -->
